@@ -222,7 +222,7 @@ def ddl(update,bot,message,url,file_name='',thread=None,jdb=None):
             if file:
                 file = path+file
                 processFile(update,bot,message,file,jdb=jdb)            
-                os.remove(path+file)
+                os.remove(file)
                 
 def sendTxt(name,files,update,bot):
                 txt = open(name,'w')
